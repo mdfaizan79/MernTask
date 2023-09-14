@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the buttons */
+        .button {
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            position: relative;
+            height: 50px;
+            width: 100px;
+        }
+
+        /* Style for the list items */
+        .button .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .button:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .dropdown-item:hover {
+            background-color: #989494;
+        }
+
+        /* Button colors with 50px wide colored stripe */
+        .button-green {
+            background: linear-gradient(to right, #07e707 50px, transparent 75px);
+            border-radius: 10px;
+            
+        }
+
+        .button-blue {
+            background: linear-gradient(to right, #3498db 50px, transparent 75px);
+            border-radius: 10px;
+        }
+
+        .button-orange {
+            background: linear-gradient(to right, #f33712 50px, transparent 75px);
+            border-radius: 10px;
+        }
+
+        .button-brown {
+            background: linear-gradient(to right, #e91d97 50px, transparent 75px);
+            border-radius: 10px;
+        }
+        .text1{
+           
+            float: right;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div style="border: solid; width: 530px; height: 400px; ">
+        <div class="text1">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+       
+    <div class="button button-green">
+        <h4>Button 1</h4>
+        <div class="dropdown" >
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+        </div>
+    </div>
+
+    <div class="button button-blue">
+        <h4>Button 2</h4>
+        <div class="dropdown">
+            <a class="dropdown-item" href="#">Item A</a>
+            <a class="dropdown-item" href="#">Item B</a>
+            <a class="dropdown-item" href="#">Item C</a>
+        </div>
+    </div>
+
+    <div class="button button-orange">
+        <h4>Button 3</h4>
+        <div class="dropdown">
+            <a class="dropdown-item" href="#">Item X</a>
+            <a class="dropdown-item" href="#">Item Y</a>
+            <a class="dropdown-item" href="#">Item Z</a>
+        </div>
+    </div>
+
+    <div class="button button-brown">
+        <h4>Button 4</h4>
+        <div class="dropdown">
+            <a class="dropdown-item" href="#">Item P</a>
+            <a class="dropdown-item" href="#">Item Q</a>
+            <a class="dropdown-item" href="#">Item R</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
